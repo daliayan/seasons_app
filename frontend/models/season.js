@@ -1,6 +1,6 @@
 class Season {
 
-    constructor({id, name}) {
+    constructor({id, name}){ // constructor method
         this.id = id;
         this.name = name;
     }
@@ -10,10 +10,10 @@ class Season {
         const seasonDiv = document.createElement('div') // div that holds season
         seasonDiv.seasonList.add('season-list'); // adding list to the div
 
-        const seasonInformation = this.getSeasonData();
-        const activities = this.getActivityData();
+        const seasonInformation = this.getSeasonData(); // created variable with season data
+        const activities = this.getActivityData(); // created variable with activity data
 
-        seasonDiv.appendChild(seasonInformation);
+        seasonDiv.appendChild(seasonInformation); // appending elements to main div
         seasonList.appendChild(seasonDiv);
         seasonList.appendChild(activities);
 
@@ -21,7 +21,7 @@ class Season {
 
     getSeasonData(){
         const seasonData = document.createElement('div');
-        seasonData.innerHTML = `${this.name}`;
+        seasonData.innerHTML = `${this.name}`; // creating div with data of season name
         return seasonData;
     }
 
