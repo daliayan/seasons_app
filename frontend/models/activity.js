@@ -6,4 +6,9 @@ class Activity {
         this.price = price;
         this.season_id = season_id;
     } // constructor method
+
+    // getting all seasons in list
+
+
+    //adding ability to remove seasons
 }
